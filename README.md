@@ -3,15 +3,15 @@
 
 ## Tâche
 
-Détection des visages des humains. Je souhaite que le modèle puisse détecter l'emplacement des visages dans une image et représenter la plage des visages en utilisant des coordonnées de pixels.
+Mon objectif est de détecter les émotions humaines, ce qui relève de la reconnaissance faciale dans la reconnaissance d'images. À travers les images faciales, chaque image présente une expression assez évidente, et l'objectif est de prédire les émotions humaines par le biais de l'entraînement.
 
 ## Corpus
 
-Avec un dataset de taille d'à peu près 2000 photos des personnes avec leurs visages. Chaque photo de taille 64*64 est liée avec un label d'une suite de position de pixel, ces pixels couvrent les emplacements des visages dans l'image, chaque pixel étant représenté par ses coordonnées dans l'image, par exemple (100, 200) représente une coordonnée de la ligne 100 et de la colonne 200. 
+J'ai trouvé un projet similaire sur Hugging Face, qui dispose d'un ensemble de données d'entraînement assez volumineux. Par conséquent, j'ai l'intention de créer un ensemble de données un peu plus petit, d'environ 4000 entrées. Chaque entrée contiendra une photo faciale ainsi que l'émotion correspondante exprimée par le visage de la personne sur la photo, qui servira de balise.
 
 ## Type de prédiction peut servir ce corpus
 
-Localisation de visages : Prédire les coordonnées (position) des visages dans une image ou une vidéo, souvent sous forme de boîtes englobantes (bounding boxes).
+Reconnaissance d'émotions faciales, une forme de reconnaissance d'images.
 
 ## à quel modèle il a servi
 
